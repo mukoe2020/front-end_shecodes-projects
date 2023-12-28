@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HORSES</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #ff9999, #66ccff);
+      }
+      h1 {
+        text-align: center;
+        color: rgb(0, 72, 139);
+      }
+      h2 {
+        padding: 15px;
+        border-radius: 4px;
+        font-size: 25px;
+        border: 2px solid black;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        transform: scale(1);
+        width: 200px;
+        border-radius: 4px;
+        max-width: 120;
+      }
+      p {
+        line-height: 1;
+        font-size: 20px;
+        margin: 1px;
+      }
+      .wiki {
+        display: block;
+        text-decoration: underline;
+        color: blue;
+      }
+      button:hover {
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      button {
+        display: block;
+        padding: 10px 30px;
+        margin: 0px auto;
+        border-radius: 20px;
+        background: blue;
+        color: white;
+        transition: ease-in-out;
+        box-shadow: 4px 4px 4px rgb(0, 0, 0.5);
+      }
+      .last {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>Am very much in love with Horses</strong>
+    </h1>
+    <h2>My favorite is black stallions</h2>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Friesian_Stallion.jpg"
+      alt="Horses"
+      width="250"
+    />
+    <p>
+      <strong>
+        I have fallen in love with horses since I was at a very young age. I
+        love reading novels so much, and I noticed that the novels with
+        storylines featuring horses were so captivating. I began to research
+        horses and wanted to know more about them. Even though I wasn't
+        privileged enough to be able to go to a horse farm, I knew so much about
+        them, how to feed them, how to brush them. The picture of a horse I have
+        put is called a Friesian horse.
+      </strong>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Friesian_horse"
+        target="_blank"
+        class="wiki"
+      >
+        <em>Learn about Friesian horses here</em>
+      </a>
+    </p>
+    <div></div>
+    <button id="viewHorses">🐴 View Friesian Horse</button>
+    <p class="last">
+      <br />
+      <hr>
+      <span>This page was coded by 😉Memory Mukonda</span>
+    </p>
+    <script>
+      function horse() {
+        let name = prompt("What is your name?");
+        let surname = prompt("What is your surname?");
+        let animals = prompt("Do you like horses?");
+
+        if (animals === "yes") {
+          alert(
+            "Thank you, " +
+              name +
+              " " +
+              surname +
+              " 😍❤️❤️💕 You're so cool! Horses are amazing!"
+          );
+        } else {
+          alert(
+            "Thank you, " +
+              name +
+              " " +
+              surname +
+              " 😍❤️❤️💕 for sharing. Horses are not for everyone, but they are truly fascinating creatures!"
+          );
+        }
+      }
+
+      let viewHorses = document.getElementById("viewHorses");
+
+      viewHorses.addEventListener("click", horse);
+    </script>
+  </body>
+</html>
