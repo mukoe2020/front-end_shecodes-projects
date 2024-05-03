@@ -1,35 +1,42 @@
 main p strong {
-    color: red;
-  }
+  color: red;
+}
 body {
-  background-color: aqua;
+background-color: aqua;
 }
 .weatherapp {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+background-color:white;
+border-radius: 10px;
+padding: 50px;
+margin: 50px;
+width: 400px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
 }
 footer{
-  text-align: center;
-  border-top: 1px solid black;
-  padding-top: 10px;
+text-align: left;
+border-top: 1px solid black;
+padding-top: 10px;
 }
 header{
-  text-align: center;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
+text-align: left;
+border-bottom: 1px solid black;
+padding-bottom: 10px;
 }
 .current-weather{
-  display: flex;
-  flex-direction: space-between;
+display: flex;
+flex-direction: space-between;
 }
 .current_tempreture{
-  font-size: 50px;
+font-size: 50px;
 } 
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px left; /* Center the container horizontally */
+  max-width: 600px; /* Adjust the maximum width of the container */
+}
