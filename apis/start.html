@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <title>Document</title>
+  <style>
+    .header{
+      color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">AJAX</h1>
+
+  <script>
+    function displayUsername(response){
+      console.log(response.data.username);
+
+      let h1 = document.querySelector("h1")
+      h1.innerHTML = `hey ${username}`
+    }
+    let api = "https://jsonplaceholder.typicode.com/users/2";
+
+    axios.get(api).then(displayUsername)
+  </script>
+</body>
+</html>
