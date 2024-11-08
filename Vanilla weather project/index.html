@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="src/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div class="app">
@@ -23,17 +24,17 @@
     </form>
   </header>
   <main>
-    <h2>Current Weather </h2>
+    
     <div class="app-data">
       <div class="app-data">
-        <h3 class="weather-app-city" id="city">Pretoria</h3>
+        <h3 class="weather-app-city" id="city"></h3>
         <p class="weather-app-details">Wednesday  <strong>  20:05</strong>   
           <span> <p>Clear Sky ,UV high</p></span>
         </p>
       </div>
         <div class="weather-app-cointainer">
           <div class="weather-app-icon">☀</div>
-          <div class="weather-app-temperature">35</div>
+          <div class="weather-app-temperature" id="temperature"></div>
           <div class="weather-app-unit">°C</div>
         </div>
     </br>
