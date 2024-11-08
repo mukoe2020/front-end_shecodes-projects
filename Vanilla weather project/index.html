@@ -8,13 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <div class="app">
   <header>
     <h1>Vanilla weather project</h1>
-    <form class="search-form">
-      <input type="search" placeholder="search for a city" class="search-form-input">
+    <form class="search-form" id="search-form" >
+      <input type="search" 
+      placeholder="search for a city" required
+      id="search-form-input"
+      class="search-form-input">
       <button class="search-form-button">search</button>
     </form>
   </header>
@@ -22,7 +26,7 @@
     <h2>Current Weather </h2>
     <div class="app-data">
       <div class="app-data">
-        <h3 class="weather-app-city">Pretoria</h3>
+        <h3 class="weather-app-city" id="city">Pretoria</h3>
         <p class="weather-app-details">Wednesday  <strong>  20:05</strong>   
           <span> <p>Clear Sky ,UV high</p></span>
         </p>
@@ -44,5 +48,6 @@
     </p>
   </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
