@@ -1,5 +1,3 @@
-
-
 body{
   background:blue;
   font-family: "Montserrat", serif;
@@ -21,8 +19,6 @@ body{
   font-size: 13px;
   font-style: italic;
   color: #000;
-
-
 }
 main{
   padding:20px;
@@ -66,7 +62,7 @@ header{
   font-weight: 500;
 }
 .weather-app-details strong{
-  color: purple
+  color: purple;
 }
 .weather-app-icon{
   color: goldenrod;
