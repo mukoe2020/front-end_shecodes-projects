@@ -13,20 +13,24 @@
   <div class="app">
   <header>
     <h1>Vanilla weather project</h1>
-    <form>
-      <input type="search" placeholder="search for a city">
-      <button>search</button>
+    <form class="search-form">
+      <input type="search" placeholder="search for a city" class="search-form-input">
+      <button class="search-form-button">search</button>
     </form>
   </header>
   <main>
     <h2>Current Weather </h2>
-    <h3>Pretoria</h3>
-    <p>Wednesday 20:05 , UV high</p>
-    <p>clear sky</p>  
+    <div class="app-data">
+      <div class="app-data">
+        <h3 class="weather-app-city">Pretoria</h3>
+        <p class="weather-app-details">Wednesday  <strong>  20:05</strong>   
+          <span> <p>Clear Sky ,UV high</p></span>
+        </p>
+        
+          <br>
+        <p class="weather-app-temperature">☀35°C</p>
+      </div>
     </br>
-    <div>
-    ☀35°C
-    </div>
     <p>Humidity 0% , Wind 5.05km/h</p>
     
   </main>

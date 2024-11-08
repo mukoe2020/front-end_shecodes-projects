@@ -1,7 +1,9 @@
+
+
 body{
-  background-color:black;
-      font-family: "Montserrat", serif;
-      font-style: normal;
+  background:blue;
+  font-family: "Montserrat", serif;
+  font-style: normal;
      }
 
 .app{
@@ -15,6 +17,52 @@ body{
   box-shadow: 0 30px 50px  rgba(158, 20, 20, 0.1);
 }
 .footer{
-  margin-top: 20px;
+  border-top: 20px;
+  font-size: 13px;
   font-style: italic;
+  color: #000;
+
+
+}
+main{
+  padding:20px;
+}
+header{
+  margin-bottom: 20px;
+}
+.search-form-input{
+  background-color: white;
+  border-radius: 7px;
+  padding: 10px;
+  width:30%;
+  border: 1px solid blue;
+  margin-right: 10px;
+  box-shadow: inset;
+
+}
+.search-form-button{
+  background-color: blue;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  color: white;
+  font-size: 16px;
+  width: 10%;
+}
+.weather-app-temperature{
+  font-size: 2em;
+  color: red;
+
+}
+.weather-app-city{
+  margin: 0 ;
+  font-size: 30px;
+  line-height: 48px;
+}
+.weather-app-details{
+  font-size: 20px;
+  font-weight: 500;
+}
+.weather-app-details strong{
+  color: red;
 }
