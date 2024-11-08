@@ -8,7 +8,10 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
-  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
+
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = getDay(date);
@@ -40,7 +43,7 @@ function getDay(date) {
   ];
   let day = days[date.getDay()];
   if (mins < 10) {
-    mins = `0${minutes}`;
+    mins = `0${mins}`;
   }
 
   return `${day} ${hours} :${mins}`
