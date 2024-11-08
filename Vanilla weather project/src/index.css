@@ -49,9 +49,11 @@ header{
   font-size: 16px;
   width: 10%;
 }
-.weather-app-temperature{
+.weather-app-cointainer{
   font-size: 2em;
-  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .weather-app-city{
@@ -64,5 +66,20 @@ header{
   font-weight: 500;
 }
 .weather-app-details strong{
-  color: red;
+  color: purple
+}
+.weather-app-icon{
+  color: goldenrod;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.weather-app-temperature{
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: bold;
+}
+.weather-app-unit{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
