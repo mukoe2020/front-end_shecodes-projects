@@ -1,0 +1,20 @@
+body{
+  background-color:black;
+      font-family: "Montserrat", serif;
+      font-style: normal;
+     }
+
+.app{
+
+  text-align: center;
+  background-color:white;
+  border-radius: 5px;
+  width: 800px;
+  margin: 30px auto;
+  padding: 40px;
+  box-shadow: 0 30px 50px  rgba(158, 20, 20, 0.1);
+}
+.footer{
+  margin-top: 20px;
+  font-style: italic;
+}
