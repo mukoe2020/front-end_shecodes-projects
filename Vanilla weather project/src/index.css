@@ -1,5 +1,5 @@
 body{
-  background-color: #f5f5f5;
+  background-color: aquamarine;
   font-family: "Montserrat", serif;
   font-style: normal;
      }
@@ -7,7 +7,7 @@ body{
 .app{
 
   
-  background-color:pink;
+  background-color: whitesmoke;
   border-radius: 20px;
   width: 600px;
   margin: 5px auto;
