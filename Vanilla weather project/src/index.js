@@ -50,6 +50,27 @@ function getDay(date) {
 
 }
 
+function displayForeCast() {
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+  let forecastHTML = '<div class="weather-forecast">';
+
+  days.forEach(function (day) {
+    forecastHTML += `
+      <div class="weather-forecast-item">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌨</div>
+        <div class="weather-forecast-temps">
+          <div class="weather-forecast-temp"><strong>12°</strong></div>
+          <div class="weather-forecast-temp"><strong>6°</strong></div>
+        </div>
+      </div>
+    `;
+  });
+
+  forecastHTML += "</div>"; // Close the weather-forecast div
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function searchCity(city) {
   let apiKey = "5d35aed7d739od4f0tcba50250e7abc6";
@@ -68,4 +89,8 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Lisbon")
+searchCity("Lisbon");
+displayForeCast();
+
+
+
