@@ -22,7 +22,7 @@ function updateWeather(response) {
   
 
   
- 
+ getforecast(response.data.city)
 
   console.log(response.data);
   
@@ -50,7 +50,16 @@ function getDay(date) {
 
 }
 
-function displayForeCast() {
+function getforecast(city) {
+  let apiKey = "5d35aed7d739od4f0tcba50250e7abc6";
+  let apiUrl =
+    `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForeCast)
+}
+
+function displayForeCast(response) {
+  console.log(response.data);
+
   let days = ["Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   let forecastHTML = '<div class="weather-forecast">';
 
@@ -60,8 +69,8 @@ function displayForeCast() {
         <div class="weather-forecast-date">${day}</div>
         <div class="weather-forecast-icon">🌨</div>
         <div class="weather-forecast-temps">
-          <div class="weather-forecast-temp"><strong>12°</strong></div>
-          <div class="weather-forecast-temp"><strong>6°</strong></div>
+          <div class="weather-forecast-temp"><strong>12°c</strong></div>
+          <div class="weather-forecast-temp"><strong>6°c</strong></div>
         </div>
       </div>
     `;
@@ -90,7 +99,7 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Lisbon");
-displayForeCast();
+
 
 
 
