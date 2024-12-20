@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #FF0000;
+  --branding-color:  rgb(90, 90, 189);
   --secondary-color: #F9F7FE;
   --heading-font: "playfair display", serif;
   --default-font: "popins", sans-serif;
@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-family: var(--default-font);
   font-weight: normal;
+  font-size: 16px;
 }
 .hero {
   background: #F9F7FE;
@@ -29,4 +30,31 @@ p{
   font-family: var(--heading-font);
   font-weight: normal;
   font-size: 24px;
+}
+
+h2{
+  font-size: 64px;
+  font-weight: bold;
+ 
+}
+.btn-branding{
+  font-size: 18px;
+  color: var(--branding-color);
+  line-height: 27px;
+  padding:15px 30px;
+  border: 1px solid var(--branding-color);
+  text-align: justify;
+
+
+}
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
 }
