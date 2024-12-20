@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #FF0000;
+  --secondary-color: #F9F7FE;
+  --heading-font: "playfair display", serif;
+  --default-font: "popins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{  
+  color: #000000;
+  font-family: var(--default-font);
+  font-weight:bold;
+  font-size: 50px;
+}
+
+p{
+  font-family: var(--default-font);
+  font-weight: normal;
+}
+.hero {
+  background: #F9F7FE;
+  text-align: center;
+
+}
+.hero p{
+  font-size: 36px;
+  font-weight: bold;
+  margin: auto;
+}
+.hero h2{
+  font-family: var(--heading-font);
+  font-weight: normal;
+  font-size: 24px;
+}
