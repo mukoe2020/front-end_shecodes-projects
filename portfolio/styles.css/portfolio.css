@@ -4,10 +4,10 @@
   --heading-font: "playfair display", serif;
   --default-font: "popins", sans-serif;
 }
-h1,h2,h3,h4,h5,h6{  
+h1,h2,h4,h5,h6{  
   color: #000000;
   font-family: var(--default-font);
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 50px;
 }
 
@@ -71,6 +71,21 @@ h2{
 .about-section-content{
   margin: 50px 0;
 }
+.work-content{
+  margin: 50px 0;
+}
+work-page{
+  padding: 140px 20px;
+}
+work-page h1{
+  font-size: 50px;
+  line-height: 50px;
+}
+.work-content p{
+  font-size: 16px;
+  line-height: 1;
+  
+}
 @media screen and (max-width: 768px){
   h1{
     font-size: 64px;
@@ -81,6 +96,10 @@ h2{
     font-weight: bold;
   }
   .about-page{
+    text-align: center;
+    padding: 0;
+  }
+  .work-page{
     text-align: center;
     padding: 0;
   }
