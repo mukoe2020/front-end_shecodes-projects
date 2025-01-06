@@ -7,7 +7,7 @@
 h1,h2,h3,h4,h5,h6{  
   color: #000000;
   font-family: var(--default-font);
-  font-weight:bold;
+  font-weight: lighter;
   font-size: 50px;
 }
 
@@ -47,6 +47,30 @@ h2{
 
 
 }
+.about-page h1{
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-page p{
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--default-font);
+}
+
+
+.custom-img{
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  margin: auto;
+}
+.about-page{
+  padding: 140px 20px;
+}
+.about-section-content{
+  margin: 50px 0;
+}
 @media screen and (max-width: 768px){
   h1{
     font-size: 64px;
@@ -55,6 +79,10 @@ h2{
   h2{
     font-size: 48px;
     font-weight: bold;
+  }
+  .about-page{
+    text-align: center;
+    padding: 0;
   }
   
 }
