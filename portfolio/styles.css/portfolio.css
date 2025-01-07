@@ -141,6 +141,10 @@ footer.email-link:hover{
   padding:  30px 30px;
   border-radius: 10px;
 }
+nav li.active a {
+  color: var(--branding-color);
+  font-weight: bold;
+}
 @media screen and (max-width: 768px){
   h1{
     font-size: 64px;
