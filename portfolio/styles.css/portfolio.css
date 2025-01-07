@@ -90,6 +90,29 @@ work-page h1{
   padding: 140px 20px;
   text-align: center;
 }
+.logo{
+  max-width: 150px;
+}
+nav li{
+  display: inline;
+  list-style: none;
+  margin: 15px;
+  font-weight: bold;
+}
+nav ul{
+  padding: 0;
+  margin: 0 ; 
+}
+nav a{
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms  ease-in-out;
+}
+
+nav li.active a,
+nav li a:hover{
+  color: var(--branding-color);
+} 
 @media screen and (max-width: 768px){
   h1{
     font-size: 64px;
@@ -106,6 +129,9 @@ work-page h1{
   .work-page{
     text-align: center;
     padding: 0;
+  }
+  nav a{
+    font-size: 16px;
   }
   
 }
